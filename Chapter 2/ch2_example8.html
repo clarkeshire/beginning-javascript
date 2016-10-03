@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en"
+    <head>
+        <meta charset="utf-8" />
+        <title>Chapter 2, Example 8 </title>
+    </head>
+    <body>
+      <script>
+
+        var myArray = new Array();
+        var anotherArray = [];
+
+        anotherArray = ["matt", 39, "Jane" ,40, "Eva",8, "William",6];
+
+
+
+        document.write(anotherArray[0] + " is " + anotherArray[1] + "<br/>");
+
+
+        //multidimensional array stuff...
+
+        myArray[0] = [];
+        myArray[0][0] = "Matt";
+        myArray[0][1] = 39;
+        myArray[0][2] = "07764 815164";
+
+        myArray[1] = [];
+        myArray[1][0] = "Jane";
+        myArray[1][1] = 40;
+        myArray[1][2] = "07764 8151643";
+
+        var myResponse = prompt("Would you like to see the answer?","");
+
+        if (myResponse == "Yes")
+        {
+          document.write(myArray[0][0] + "'s phone number is not " + myArray[1][2]);
+        }
+
+      </script>
+    </body>
+</html>
